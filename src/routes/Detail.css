@@ -6,9 +6,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: var(--color-pink);
+  background-color: var(--color-light-pink);
 }
 .movie-detail span {
   line-height: 100vh;
   color: var(--color-white);
+  text-transform: uppercase;
 }

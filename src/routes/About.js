@@ -5,7 +5,7 @@ function About(props){
     console.log(props);
     return (
         <div className="about">
-            <span>ABOUT PAGE 🍀</span>
+            <span>ABOUT PAGE 🐱‍💻</span>
         </div>
     );
 }

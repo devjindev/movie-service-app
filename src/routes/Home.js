@@ -21,7 +21,7 @@ class Home extends React.Component{
       <section className="container">
         {isLoading ? (
           <div className="loading">
-            <span>잠시만 기다려주세요 :) 🤍</span>
+            <span>잠시만 기다려주세요 . . 🐱‍🏍</span>
           </div>
         ) : (
           <div className="home">

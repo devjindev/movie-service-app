@@ -13,7 +13,7 @@ class Detail extends React.Component{
         if(location.state){
             return(
                 <div className="movie-detail">
-                    <span>{location.state.title}</span>
+                    <span>{location.state.title} 🤍</span>
                 </div>
             );
         }else{
