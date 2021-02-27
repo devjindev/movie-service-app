@@ -22,7 +22,6 @@ Movie.propTypes = {
     year: PropTypes.number.isRequired,
     summary: PropTypes.string.isRequired,
     poster: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
     genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
