@@ -25,8 +25,15 @@
 }
 
 /* Uriversal tags */
+* {
+  font-family: "Roboto", sans-serif;
+}
 ul {
   list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
 }
 
 /* Typotgraphy */
@@ -34,7 +41,6 @@ ul {
 /*? container */
 .container {
   background-color: var(--color-black);
-  font-family: "Roboto", sans-serif;
 }
 
 /*? loading */
@@ -54,15 +60,15 @@ ul {
 }
 
 /*? movies */
-.movies {
-  padding: 100px 10%;
+.home {
+  padding: 150px 10%;
   max-width: 1320px;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-.movies *::selection {
+.home *::selection {
   color: var(--color-white);
   background-color: var(--color-black);
 }

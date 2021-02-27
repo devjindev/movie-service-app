@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 @import url("reset.css");
-@import url("App.css");
-@import url("Movie.css");
+@import url("../routes/Home.css");
+@import url("../routes/About.css");
+@import url("../components/Movie.css");
+@import url("../components/Navigation.css");
