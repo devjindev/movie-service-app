@@ -49,3 +49,25 @@
 .movies-movie ul li:not(:first-of-type) {
   margin-left: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  /*? movieZ */
+  .movies-movie {
+    width: 100%;
+    min-width: 0;
+    height: 400px;
+    padding: 25px 5%;
+    margin-bottom: 50px;
+    position: static;
+  }
+  .movies-movie img {
+    width: 100px;
+    position: static;
+    top: 0;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .movies-movie > *:not(img) {
+    margin-left: 0;
+  }
+}
