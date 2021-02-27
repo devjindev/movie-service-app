@@ -7,11 +7,13 @@
   --color-light-grey: #7c7979;
   --color-grey: #616161;
   --color-dark-grey: #4d4d4d;
-  --color-black: #212529;
+  /* --color-black: #212529; */
+  --color-black: #000000;
+  --color-pink: #cf455c;
 
   /* Font size */
   --font-large: 48px;
-  --font-medium: 28px;
+  --font-medium: 24px;
   --font-regular: 16px;
   --font-small: 14px;
   --font-micro: 12px;
@@ -23,5 +25,44 @@
 }
 
 /* Uriversal tags */
+ul {
+  list-style: none;
+}
 
 /* Typotgraphy */
+
+/*? container */
+.container {
+  background-color: var(--color-black);
+  font-family: "Roboto", sans-serif;
+}
+
+/*? loading */
+.loading {
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.loading span {
+  line-height: 100vh;
+}
+
+/*? movies */
+.movies {
+  padding: 100px 10%;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.movies *::selection {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}

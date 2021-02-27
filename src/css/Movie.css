@@ -1,0 +1,51 @@
+/*? movieZ */
+.movies-movie {
+  width: 40%;
+  min-width: 350px;
+  height: 200px;
+  padding: 25px 2.5%;
+  margin-bottom: 100px;
+  background: var(--color-white);
+  box-shadow: 0 13px 27px -5px rgb(205 205 162 / 25%),
+    0 8px 16px -8px rgb(255 255 255 / 30%),
+    0 -6px 16px -6px rgb(255 255 255 / 3%);
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.movies-movie:hover {
+  transform: translateY(-10px);
+}
+.movies-movie img {
+  width: 150px;
+  box-shadow: 0 30px 60px -12px rgb(50 50 93 / 25%),
+    0 18px 36px -18px rgb(0 0 0 / 30%), 0 -12px 36px -8px rgb(0 0 0 / 3%);
+  position: absolute;
+  top: -35px;
+}
+.movies-movie > *:not(img) {
+  margin-left: 180px;
+  line-height: 1.3em;
+}
+.movies-movie > *:not(h3) {
+  color: var(--color-grey);
+  font-weight: var(--weight-light);
+}
+.movies-movie h3 {
+  /* color: var(--color-pink); */
+  font-weight: var(--weight-reaular);
+  font-size: var(--font-medium);
+  margin-bottom: 5px;
+}
+.movies-movie h5 {
+  font-size: var(--font-small);
+  margin-bottom: 5px;
+}
+.movies-movie ul {
+  font-size: var(--font-small);
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.movies-movie ul li:not(:first-of-type) {
+  margin-left: 10px;
+}
