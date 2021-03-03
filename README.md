@@ -1,4 +1,4 @@
-# React - To Do List
+# Movie Service Application
 ![](https://img.shields.io/badge/-HTML5-F1662B)
 ![](https://img.shields.io/badge/-CSS3-2FA9DC)
 ![](https://img.shields.io/badge/-JavaScript-E3A127)
@@ -10,22 +10,22 @@
 ![preview](https://user-images.githubusercontent.com/74370531/109858588-56a17c00-7c9f-11eb-8bb9-a905961df5f6.jpg)  
 
 ## 📖 File Description
-* TodoTemplet.js : ToDoList 레이아웃 (박스)
-* TodoHead.js : ToDoList 헤더 (날짜, 시간, 남은 할 일 갯수 ...)
-* TodoList.js : 여러개의 ToDoItem conponent 렌더링
-```js
-// todos 배열 => TodoItem의 todos 배열 (렌더링)
-const todoList = todos.map(({id, text, done}) => (
-  <TodoItem id={id} text={text} done={done} onToggle={onToggle} onRemove={onRemove} key={id}/>
-));
+* Routes
+  * Home.js : 홈(메인) 페이지
+    * state
+    * container(loading, home)
 ```
-* TodoItem.js
-  * onToggle : 할 일 체크 (완료)
-  * text : 텍스트
-  * onRemove : 할 일 삭제 (휴지통)
-* TodoCreate.js : 새 할 일 등록 (폼)
-  * onChange : 입력
-  * onCreate, onKeypress : 확인 (버튼 / 엔터)  
+// API 받아와서 movies 배열 fecth
+getMovies = async () => {
+  const {data: {data: {movies}}} = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
+  this.setState({movies, isLoading: false});
+};
+```
+  * Detail.js : movie 상세 정보 페이지
+  * About.js : about 페이지
+* Components
+  * Navigation.js : 상단 메뉴
+  * Movie.js : movie  
 
 ## 🔧 Install
 ```
@@ -44,4 +44,12 @@ npm start
 * Blog : [진개발연구소](https://devjindev.tistory.com/)  
 
 ## 📝 License
-MIT © Yujin Hong
+MIT © Yujin Hong  
+
+.  
+
+.  
+
+.  
+
+##### 본 프로젝트는 <노마드코더 - 'React Fundamentals 2019'> 을 참고하여 제작하였습니다.
