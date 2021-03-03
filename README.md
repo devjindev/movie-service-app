@@ -14,7 +14,7 @@
   * Home.js : 홈(메인) 페이지
     * state
     * container(loading, home)
-```
+```js
 // API 받아와서 movies 배열 fecth
 getMovies = async () => {
   const {data: {data: {movies}}} = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
