@@ -1,14 +1,100 @@
-.about {
-  text-align: center;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+footer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--color-light-pink);
+  font-size: var(--font-medium);
 }
-.about span {
-  line-height: 100vh;
+footer > div {
+  height: 220px;
+  position: relative;
+  margin-bottom: 20px;
+}
+footer > div > div {
+  position: absolute;
+  display: block;
+  height: 200px;
+  border-radius: 15px;
+}
+footer > div > div:nth-of-type(1) {
+  top: 0px;
+  left: 30%;
+  width: 40%;
+  background-color: var(--color-white);
+  z-index: 100;
+}
+footer > div > div:nth-of-type(2) {
+  top: 10px;
+  left: 31%;
+  width: 38%;
+  background-color: var(--color-dark-white);
+  z-index: 10;
+}
+footer > div > div:nth-of-type(3) {
+  top: 20px;
+  left: 32%;
+  width: 36%;
+  background-color: var(--color-light-grey);
+  z-index: 1;
+}
+/* footer Contents */
+footer > div > div:nth-of-type(1) span {
+  display: block;
+}
+footer > div > div:nth-of-type(1) span:first-of-type {
+  padding: 0 5%;
+  line-height: 100px;
+  font-weight: var(--weight-bold);
+  background-color: transparent;
+}
+footer > div > div:nth-of-type(1) span:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 5%;
+  line-height: 100px;
+  background-color: var(--color-light-white);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  font-size: 2vw;
+}
+footer > div > div:nth-of-type(1) span:last-of-type a {
+  width: 20%;
+  margin-left: 5%;
+  background-color: var(--color-light-blue);
+  border-radius: 0 0 15px 0;
+  text-align: center;
+  font-size: var(--font-medium);
+}
+footer > div > div:nth-of-type(1) span:last-of-type a i {
+  transition: all 0.1s ease-in-out;
+  color: var(--color-blue);
+}
+footer > div > div:nth-of-type(1) span:last-of-type a i:hover {
+  color: var(--color-grey);
+}
+/* footer sns */
+footer > span {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer > span a,
+footer > span a i {
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
   color: var(--color-white);
+}
+footer > span a:last-of-type {
+  font-weight: var(--weight-bold);
+  margin-left: 20px;
+}
+footer > span a:hover,
+footer > span a i:hover {
+  color: var(--color-light-blue);
+}
+footer > p {
+  color: var(--color-grey);
+  font-size: var(--font-small);
+  text-align: center;
 }
