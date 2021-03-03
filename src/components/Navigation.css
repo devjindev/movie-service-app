@@ -19,6 +19,17 @@ nav ul li a {
   color: var(--color-white);
   transition: all 0.1s;
 }
+nav ul li:first-of-type a {
+  color: var(--color-light-red);
+}
 nav ul li a:hover {
-  color: var(--color-pink);
+  color: var(--color-grey);
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  nav ul {
+    padding: 15px 0;
+    font-size: var(--font-regular);
+  }
 }

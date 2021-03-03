@@ -9,8 +9,9 @@
   --color-dark-grey: #4d4d4d;
   /* --color-black: #212529; */
   --color-black: #000000;
-  --color-light-pink: #ff9898;
-  --color-pink: #cf455c;
+  --color-blue: #023e73;
+  --color-light-red: #a60303;
+  --color-red: #590202;
 
   /* Font size */
   --font-large: 48px;
@@ -51,20 +52,57 @@ body {
   background-color: var(--color-black);
 }
 
-/*? loading */
+/*? Loading */
 .loading {
-  color: var(--color-white);
-  background-color: var(--color-pink);
-  text-align: center;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-red);
+  transition: all 0.5s;
+  z-index: 10;
 }
+/* loading svg */
+@keyframes loading-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading svg {
+  width: 54px;
+  line-height: 54px;
+  animation: loading-spin 3s infinite;
+}
+/* loading circle */
+@keyframes loading-circle-ani {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+.loading svg circle {
+  stroke: var(--color-white);
+  stroke-width: 4;
+  stroke-dasharray: 157;
+  stroke-dashoffset: 0;
+  fill: transparent;
+  animation: loading-circle-ani 1s infinite;
+  color: var(--color-white);
+}
+/* loading span */
 .loading span {
-  line-height: 100vh;
+  margin-top: -15px;
+  color: var(--color-white);
 }
 
 /*? movies */
@@ -79,4 +117,11 @@ body {
 .home *::selection {
   color: var(--color-white);
   background-color: var(--color-black);
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .home {
+    padding: 80px 10%;
+  }
 }

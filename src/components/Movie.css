@@ -34,7 +34,6 @@
   font-weight: var(--weight-light);
 }
 .movies-movie h3 {
-  /* color: var(--color-pink); */
   font-weight: var(--weight-reaular);
   font-size: var(--font-medium);
   margin-bottom: 5px;

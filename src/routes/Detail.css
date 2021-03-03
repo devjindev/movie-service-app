@@ -1,6 +1,6 @@
 .movie-detail {
   text-align: center;
-  background-color: var(--color-light-pink);
+  background-color: var(--color-blue);
 }
 .movie-detail span {
   line-height: 100vh;

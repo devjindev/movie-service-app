@@ -12,7 +12,7 @@ class Detail extends React.Component{
         if(location.state){
             return(
                 <div className="movie-detail">
-                    <span>{location.state.title} 🤍</span>
+                    <span>상세페이지 준비 중입니다 . . . 🐱‍🏍</span>
                 </div>
             );
         }else{

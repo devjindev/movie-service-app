@@ -21,7 +21,10 @@ class Home extends React.Component{
       <section className="container">
         {isLoading ? (
           <div className="loading">
-            <span>잠시만 기다려주세요 . . 🐱‍🏍</span>
+            <svg>
+              <circle cx="50%" cy="50%" r="25"></circle>
+            </svg>
+            <span>잠시만 기다려주세요 . . . 🐱‍🏍</span>
           </div>
         ) : (
           <div className="home">

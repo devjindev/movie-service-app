@@ -3,13 +3,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color-light-pink);
-  font-size: var(--font-medium);
+  background-color: var(--color-blue);
+  font-size: 28px;
+  position: relative;
 }
 footer > div {
   height: 220px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 footer > div > div {
   position: absolute;
@@ -61,23 +62,22 @@ footer > div > div:nth-of-type(1) span:last-of-type {
 footer > div > div:nth-of-type(1) span:last-of-type a {
   width: 20%;
   margin-left: 5%;
-  background-color: var(--color-light-blue);
+  background-color: #067354;
   border-radius: 0 0 15px 0;
   text-align: center;
-  font-size: var(--font-medium);
+  font-size: 28px;
 }
 footer > div > div:nth-of-type(1) span:last-of-type a i {
   transition: all 0.1s ease-in-out;
-  color: var(--color-blue);
+  color: var(--color-white);
 }
 footer > div > div:nth-of-type(1) span:last-of-type a i:hover {
-  color: var(--color-grey);
+  color: var(--color-dark-white);
 }
 /* footer sns */
 footer > span {
   display: block;
   text-align: center;
-  margin-bottom: 30px;
 }
 footer > span a,
 footer > span a i {
@@ -91,10 +91,54 @@ footer > span a:last-of-type {
 }
 footer > span a:hover,
 footer > span a i:hover {
-  color: var(--color-light-blue);
+  color: #067354;
 }
 footer > p {
-  color: var(--color-grey);
+  color: var(--color-light-grey);
   font-size: var(--font-small);
   text-align: center;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 20px 0;
+    font-size: 24px;
+  }
+  footer > div {
+    height: 140px;
+  }
+  footer > div > div {
+    height: 120px;
+  }
+  footer > div > div:nth-of-type(1) {
+    left: 10%;
+    width: 80%;
+  }
+  footer > div > div:nth-of-type(1) span:first-of-type {
+    line-height: 60px;
+  }
+  footer > div > div:nth-of-type(1) span:last-of-type {
+    line-height: 60px;
+    font-size: var(--font-small);
+  }
+  footer > div > div:nth-of-type(1) span:last-of-type a {
+    font-size: 24px;
+  }
+  footer > div > div:nth-of-type(2) {
+    top: 8px;
+    left: 11%;
+    width: 78%;
+  }
+  footer > div > div:nth-of-type(3) {
+    top: 16px;
+    left: 12%;
+    width: 76%;
+  }
+  footer > p {
+    font-size: var(--font-micro);
+  }
 }
