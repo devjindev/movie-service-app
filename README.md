@@ -7,7 +7,7 @@
 `React를 사용하여 제작한 Movie Service Application 입니다.`  
 
 ## ✨ Preview
-![preview](https://user-images.githubusercontent.com/74370531/109855989-4fc53a00-7c9c-11eb-9643-9e1e403ebc72.jpg)  
+![preview](https://user-images.githubusercontent.com/74370531/109858588-56a17c00-7c9f-11eb-8bb9-a905961df5f6.jpg)  
 
 ## 📖 File Description
 * TodoTemplet.js : ToDoList 레이아웃 (박스)
