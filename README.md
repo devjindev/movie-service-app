@@ -9,7 +9,7 @@
 ## ✨ Preview
 ![preview](https://user-images.githubusercontent.com/74370531/109858588-56a17c00-7c9f-11eb-8bb9-a905961df5f6.jpg)  
 
-## 📖 File Description
+## 🔎 File Description
 * Routes
   * Home.js : 홈(메인) 페이지
     * state
