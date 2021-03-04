@@ -15,7 +15,7 @@
     * state
     * container(loading, home)
 ```js
-// API 받아와서 movies 배열 fecth
+// axios를 사용하여 API를 받아온다. => movies 배열 fecth
 getMovies = async () => {
   const {data: {data: {movies}}} = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
   this.setState({movies, isLoading: false});
