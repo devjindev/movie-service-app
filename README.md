@@ -10,8 +10,8 @@
 ![preview](https://user-images.githubusercontent.com/74370531/109858588-56a17c00-7c9f-11eb-8bb9-a905961df5f6.jpg)  
 
 ## 🔎 File Description
-* Routes
-  * Home.js : 홈(메인) 페이지
+* 📁 Routes
+  * 📄 Home.js : 홈(메인) 페이지
     * state
     * container(loading, home)
 ```js
@@ -21,11 +21,11 @@ getMovies = async () => {
   this.setState({movies, isLoading: false});
 };
 ```
-  * Detail.js : movie 상세 정보 페이지
-  * About.js : about 페이지
-* Components
-  * Navigation.js : 상단 메뉴
-  * Movie.js : movie  
+  * 📄 Detail.js : movie 상세 정보 페이지
+  * 📄 About.js : about 페이지
+* 📁 Components
+  * 📄 Navigation.js : 상단 메뉴
+  * 📄 Movie.js : movie  
 
 ## 🔧 Install
 ```
